@@ -80,7 +80,7 @@ for(i in 1:116){
 		print(y)
 	}
 	fit<-lm(y~x)
-	cat(paste(names(Normal)[i],": ",coef(fit)[2],"\n",sep=""))
+	## cat(paste(names(Normal)[i],": ",coef(fit)[2],"\n",sep=""))
 	Normal[i]<-predict(fit,newdata=data.frame(x=max(x)+1))
 }
 deathsAbove<-(DeathRate[6:121]-Normal)
