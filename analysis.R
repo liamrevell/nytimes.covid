@@ -9,6 +9,7 @@ DD<-gsub(",","",DD[,1])
 DeathRate<-setNames(as.numeric(DD),X[[1]])
 
 ## append 2019 & 2020 provisional death 
+## rates from https://www.cdc.gov/mmwr/volumes/70/wr/mm7014e1.htm
 DeathRate<-c(DeathRate,setNames(c(715.2,828.7),c(2019,2020)))
 
 ## first, reproduce the figure of NYTimes article
